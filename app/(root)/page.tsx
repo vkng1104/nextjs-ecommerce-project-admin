@@ -1,10 +1,21 @@
-import { Button } from "@/components/ui/button";
+"use client";
 
-export default function Home() {
-  return (
-    <div className="p-4 bg-slate-500">
-      <p>Hello from Dashboard</p>
-      <Button variant="destructive">Click me</Button>
-    </div>
-  );
+import { useEffect } from "react";
+
+import { Modal } from "@/components/ui/modal";
+import { useStoreModal } from "@/hooks/use-store-modal";
+
+function SetupPage() {
+  const isOpen = useStoreModal((state) => state.isOpen);
+  const onOpen = useStoreModal((state) => state.onOpen);
+
+  useEffect(() => {
+    if (!isOpen) {
+      onOpen();
+    }
+  }, [isOpen, onOpen]);
+
+  return <div className="p-4">Root Page</div>;
 }
+
+export default SetupPage;
