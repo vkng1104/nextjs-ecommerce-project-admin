@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 
-import { Modal } from "@/components/ui/modal";
 import { useStoreModal } from "@/hooks/use-store-modal";
 
 function SetupPage() {
@@ -15,7 +14,7 @@ function SetupPage() {
     }
   }, [isOpen, onOpen]);
 
-  return <div className="p-4">Root Page</div>;
+  return null;
 }
 
 export default SetupPage;
