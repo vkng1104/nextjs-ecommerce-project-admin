@@ -37,7 +37,7 @@ export const StoreModal = () => {
     },
   });
 
-  const router = useRouter();
+  // const router = useRouter();
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
@@ -45,7 +45,8 @@ export const StoreModal = () => {
       const response = await axios.post("/api/stores", values);
       // console.log(response.data);
       // toast.success("Store created!");
-      router.push(`/${response.data.id}`);
+      // router.push(`/${response.data.id}`);
+      window.location.assign(`/${response.data.id}`);
     } catch (err) {
       toast.error("Something went wrong.");
     } finally {
