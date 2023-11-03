@@ -44,7 +44,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
       router.push(`/${params.storeId}/sizes`);
       toast.success("Size deleted!");
     } catch (err) {
-      toast.error("Make sure to remove all categories first.");
+      toast.error("Something went wrong.");
     } finally {
       setLoading(false);
       setOpen(false);
