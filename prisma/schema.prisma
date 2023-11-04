@@ -88,13 +88,13 @@ model Color {
 }
 
 model Product {
-  id          String   @id @default(uuid())
-  name        String
-  price       Decimal
-  isFeatured  Boolean  @default(false)
-  isArchieved Boolean  @default(false)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id         String   @id @default(uuid())
+  name       String
+  price      Decimal
+  isFeatured Boolean  @default(false)
+  isArchived Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
   storeId String
   store   Store  @relation(fields: [storeId], references: [id])
