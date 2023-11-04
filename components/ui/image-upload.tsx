@@ -32,7 +32,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
 
   return (
     <div>
-      <div className="mb-4 items-center gap-4">
+      <div className="flex items-center justify-start gap-3 mb-3">
         {value.map((url) => (
           <div
             key={url}
