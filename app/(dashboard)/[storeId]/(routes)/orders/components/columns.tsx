@@ -35,8 +35,8 @@ export const columns: ColumnDef<OrderColumn>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "name",
-    header: "Name",
+    accessorKey: "products",
+    header: "Products",
   },
   {
     accessorKey: "totalPrice",
@@ -53,9 +53,5 @@ export const columns: ColumnDef<OrderColumn>[] = [
   {
     accessorKey: "address",
     header: "Address",
-  },
-  {
-    accessorKey: "products",
-    header: "Products",
   },
 ];
