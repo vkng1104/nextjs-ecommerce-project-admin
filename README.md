@@ -8,13 +8,13 @@ This is a full-stack e-commerce platform built with Next.js, React, Tailwind CSS
 ## Features
 
 - **E-commerce Admin Application:**
-- 
+
   - Manage products, categories, and orders.
   - Admin authentication and authorization.
   - Dashboard with sales statistics.
 
 - **Shared Features:**
-- 
+
   - Responsive and user-friendly design using Tailwind CSS.
   - Backend powered by Prisma and databases (MySQL).
   - Server-side rendering (SSR) with Next.js for SEO and performance.
